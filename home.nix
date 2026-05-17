@@ -45,11 +45,8 @@ in {
 
   services                                     = {
     hyprpolkitagent = i ./services/hyprpolkitagent.nix;
-    mpd-discord-rpc = i ./services/mpd-discord-rpc.nix;
     hyprlauncher    = i ./services/hyprlauncher.nix;
     mpdscribble     = i ./services/mpdscribble.nix;
-    mpd-mpris       = i ./services/mpd-mpris.nix;
-    syncthing       = i ./services/syncthing.nix;
     hyprpaper       = i ./services/hyprpaper.nix;
     blanket         = i ./services/blanket.nix;
     mako            = i ./services/mako.nix;
@@ -63,11 +60,8 @@ in {
     starship    = i ./programs/starship.nix;
     hyprlock    = i ./programs/hyprlock.nix;
     wezterm     = i ./programs/wezterm/wezterm.nix;
-    vesktop     = i ./programs/vesktop.nix;
     nushell     = i ./programs/nushell.nix;
     direnv      = i ./programs/direnv.nix;
-    nixvim      = i ./programs/nixvim/nixvim.nix;
-    ledger      = i ./programs/ledger.nix;
     emacs       = i ./programs/emacs/emacs.nix;
     eza         = i ./programs/eza.nix;
     ssh         = i ./programs/ssh.nix;
