@@ -1,0 +1,7 @@
+{ pkgs, ... }:
+
+{
+  settings = {
+    arRPC = true;
+  };
+}

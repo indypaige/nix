@@ -1,0 +1,5 @@
+{ ... }:
+
+{
+  enableNushellIntegration = true;
+}
