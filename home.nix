@@ -3,7 +3,7 @@
 in {
   programs.home-manager.enable                 = true;
 
-  home.stateVersion                            = "25.05";
+  home.stateVersion                            = "26.05";
 
   home.homeDirectory                           = "/home/" + global.name;
   home.username                                = global.name;
