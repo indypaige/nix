@@ -10,6 +10,8 @@ with pkgs.lib;
 
   plugins         = [ ];
 
+  configType      = "hyprlang";
+
   settings        = {
     animations.enabled = false; # no, thanks
 
