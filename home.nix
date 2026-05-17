@@ -18,8 +18,7 @@ in {
     nerd-fonts.iosevka
     _1password-gui
     _1password-cli
-    prismlauncher
-    hyprpwcenter
+    pavucontrol
     alsa-utils
     iosevka
     ripgrep
