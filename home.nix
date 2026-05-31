@@ -1,5 +1,5 @@
-{ pkgs, global, env, ... }: let f = { enable = true; };
-                                i = x: (import x { inherit pkgs global env; }) // f;
+{ pkgs, env, ... }@inputs: let f = { enable = true; };
+                               i = x: (import x inputs) // f;
 in {
   programs.home-manager.enable                 = true;
 

@@ -1,9 +1,9 @@
-{ global, pkgs, ... }:
+{ env, ... }:
 
 {
   settings = {
     splash    = false;
 
-    wallpaper = map (x: x // { monitor = global.output.name; }) global.wallpaper;
+    wallpaper = map (x: x // { monitor = env.output.name; }) env.wallpaper;
   };
 }

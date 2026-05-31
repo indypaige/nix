@@ -1,4 +1,4 @@
-{ pkgs, global, ... }:
+{ pkgs, global, env, ... }:
 
 with pkgs.lib;
 
@@ -18,15 +18,15 @@ with pkgs.lib;
     "$m"               = "SUPER";
 
     env                = [
-      "NIX_PROFILES=/etc/profiles/per-user/${global.name}"
-      "GRIM_DEFAULT_DIR,/home/${global.name}/Pictures"
+      "NIX_PROFILES=/etc/profiles/per-user/${env.user}"
+      "GRIM_DEFAULT_DIR,/home/${env.user}/Pictures"
       "XCURSOR_SIZE,15"
     ];
 
     monitorv2          = [
       {
-        output = global.output.name;
-        mode   = global.output.mode;
+        output = env.output.name;
+        mode   = env.output.mode;
         vrr    = 1;
       }
     ];

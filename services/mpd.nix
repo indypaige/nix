@@ -1,7 +1,7 @@
-{ global, ... }:
+{ env, ... }:
 
 {
-  musicDirectory = "/home/${global.name}/music";
+  musicDirectory = "/home/${user.name}/music";
 
   extraConfig = ''
       audio_output {

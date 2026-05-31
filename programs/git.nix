@@ -1,4 +1,4 @@
-{ pkgs, global, env, ... }:
+{ pkgs, env, ... }:
 
 {
   settings = {

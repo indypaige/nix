@@ -1,10 +1,10 @@
-{ global, ... }:
+{ env, ... }:
 
 {
   endpoints = {
     "last.fm" = {
-      passwordFile = "/home/${global.name}/lastfmpass";
-      username     = "ghouIist";
+      passwordFile = "/home/${env.name}/lastfmpass";
+      username     = env.lastfm;
     };
   };
 }

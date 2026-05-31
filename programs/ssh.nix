@@ -1,9 +1,9 @@
-{ pkgs, global, ... }:
+{ pkgs, env, ... }:
 
 {
   enableDefaultConfig = false;
 
 	matchBlocks."*"	    = { };
 
-	extraConfig 	      = "IdentityAgent ${global.onepass}";
+	extraConfig 	      = "IdentityAgent ${env.onepass}";
 }
