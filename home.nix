@@ -1,12 +1,12 @@
-{ pkgs, global, nixvim, ... }: let f = { enable = true; };
+{ pkgs, global, env, ... }: let f = { enable = true; };
                                    i = x: (import x { inherit pkgs global; }) // f;
 in {
   programs.home-manager.enable                 = true;
 
   home.stateVersion                            = "26.05";
 
-  home.homeDirectory                           = "/home/" + global.name;
-  home.username                                = global.name;
+  home.homeDirectory                           = "/home/" + env.name;
+  home.username                                = env.name;
 
   home.pointerCursor                           = i ./home/cursor.nix;
 
@@ -28,10 +28,6 @@ in {
     grim
     bash
     vlc
-  ];
-
-  imports                                      = [
-    nixvim.homeModules.nixvim
   ];
 
   wayland.windowManager                        = {
