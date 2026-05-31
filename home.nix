@@ -5,8 +5,8 @@ in {
 
   home.stateVersion                            = "26.05";
 
-  home.homeDirectory                           = "/home/" + env.name;
-  home.username                                = env.name;
+  home.homeDirectory                           = "/home/" + env.user;
+  home.username                                = env.user;
 
   home.pointerCursor                           = i ./home/cursor.nix;
 

@@ -1,10 +1,10 @@
-{ pkgs, global, ... }:
+{ pkgs, global, env, ... }:
 
 {
   settings = {
     user        = {
-      email = global.email;
-      name  = global.name;
+      email = env.email;
+      name  = env.user;
     };
 
     extraConfig = {
@@ -17,7 +17,7 @@
       };
 
       user          = {
-        signingKey = global.key;
+        signingKey = env.ssh;
       };
 
       gpg           = {
