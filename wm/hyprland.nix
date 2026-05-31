@@ -1,12 +1,14 @@
-{ pkgs, global, env, ... }:
+{ pkgs, env, ... }:
 
 with pkgs.lib;
 
-{
+let
+  hyprlandPkgs = env.inputs.hyprland.packages.${env.system};
+in {
   xwayland.enable = true;
 
-  portalPackage   = global.hyprlandPkgs.xdg-desktop-portal-hyprland;
-  package         = global.hyprlandPkgs.hyprland;
+  portalPackage   = hyprlandPkgs.xdg-desktop-portal-hyprland;
+  package         = hyprlandPkgs.hyprland;
 
   plugins         = [ ];
 
