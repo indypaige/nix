@@ -1,4 +1,4 @@
-{ env, global, ... }:
+{ env, ... }:
 
 {
   shellAliases = {
@@ -12,8 +12,6 @@
   configFile   = {
     text = ''
     $env.NIX_PROFILES = "/etc/profiles/per-user/${env.user}"
-
-    ${global.term-pets}/bin/term-pets static dino --frame 2
     '';
   };
 }
