@@ -3,7 +3,7 @@
 {
   endpoints = {
     "last.fm" = {
-      passwordFile = "/home/${env.name}/lastfmpass";
+      passwordFile = "/home/${env.user}/lastfmpass";
       username     = env.lastfm;
     };
   };
