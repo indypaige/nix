@@ -1,4 +1,4 @@
-{ pkgs, global, ... }:
+{ ... }:
 
 let extraConfig = builtins.readFile ./init.el;
 in {
