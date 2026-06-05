@@ -2,7 +2,7 @@
 
 let schema = "https://starship.rs/config-schema.json";
 in {
-  enableNushellIntegration  = true;
+  enableBashIntegration  = true;
 
   settings                  = {
     "$schema"   = schema;

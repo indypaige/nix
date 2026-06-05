@@ -11,7 +11,7 @@ in {
   home.pointerCursor                           = i ./home/cursor.nix;
 
   home.shell                                   = {
-    enableIonIntegration = true;
+    enableBashIntegration = true;
   };
 
   home.packages                                = with pkgs; [
@@ -52,7 +52,6 @@ in {
     starship    = i ./programs/starship.nix;
     hyprlock    = i ./programs/hyprlock.nix;
     wezterm     = i ./programs/wezterm/wezterm.nix;
-    nushell     = i ./programs/nushell.nix;
     direnv      = i ./programs/direnv.nix;
     emacs       = i ./programs/emacs/emacs.nix;
     eza         = i ./programs/eza.nix;
@@ -98,6 +97,6 @@ in {
   };
 
   xdg.configFile."shell"                       = {
-    source = pkgs.lib.getExe pkgs.nushell;
+    source = pkgs.lib.getExe pkgs.bash;
   };
 }
