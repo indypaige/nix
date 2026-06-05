@@ -60,10 +60,10 @@ in {
     ];
 
     general            = {
-      "col.inactive_border" = "0xff444444";
-      "col.active_border"   = "0xff444444";
+      "col.inactive_border" = "0xff1E1E2E";
+      "col.active_border"   = "0xff85C1DC";
 
-      gaps_out              = 8;
+      gaps_out              = 12;
       gaps_in               = 8;
     };
 
