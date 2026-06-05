@@ -108,12 +108,6 @@
 #+begin_src elisp :tangle yes
   (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 #+end_src
-** dired-launch
-#+begin_src elisp :tangle yes
-  (dired-launch-enable)
-
-  (setq dired-launch-default-launcher '("xdg-open"))
-#+end_src
 ** whitespace
 #+begin_src elisp :tangle yes
   (require 'whitespace)

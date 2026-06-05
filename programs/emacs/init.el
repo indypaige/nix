@@ -78,10 +78,6 @@
 
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
-(dired-launch-enable)
-
-(setq dired-launch-default-launcher '("xdg-open"))
-
 (require 'whitespace)
 
 (setq whitespace-style '(face spaces space-mark))

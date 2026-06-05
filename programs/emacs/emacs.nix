@@ -12,7 +12,6 @@ in {
     org-super-agenda
     org-superstar
     haskell-mode
-    dired-launch
     org-contrib
     inheritenv
     rust-mode
