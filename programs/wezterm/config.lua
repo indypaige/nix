@@ -2,7 +2,8 @@ local wezterm = require "wezterm"
 local config  = wezterm.config_builder()
 
 config.enable_tab_bar = false
-config.font	      = wezterm.font "JetBrains Mono"
+config.color_scheme   = "Catppuccin Frappé"
+config.font	      = wezterm.font "Iosevka"
 
 config.keys 	      = {
    {	action = wezterm.action.CloseCurrentTab({ confirm = true })
