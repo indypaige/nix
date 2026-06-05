@@ -65,6 +65,12 @@ in {
 
       gaps_out              = 12;
       gaps_in               = 8;
+
+      border_size           = 3;
+    };
+
+    decoration         = {
+      rounding = 8;
     };
 
     misc               = {
