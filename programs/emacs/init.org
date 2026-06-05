@@ -19,7 +19,10 @@
 * Window
 ** Theme
 #+begin_src elisp :tangle yes
-  (load-theme 'gruber-darker t nil)
+;; (load-theme 'gruber-darker t nil)
+   (load-theme 'catppuccin :noconfirm)
+   (setq catppuccin-flavor 'frappe)
+   (catppuccin-reload)
 #+end_src
 ** Font
 #+begin_src elisp :tangle yes

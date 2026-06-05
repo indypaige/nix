@@ -10,6 +10,7 @@ in {
     rainbow-delimiters
     multiple-cursors
     org-super-agenda
+    catppuccin-theme
     org-superstar
     haskell-mode
     org-contrib
