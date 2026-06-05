@@ -108,6 +108,12 @@
 #+begin_src elisp :tangle yes
   (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 #+end_src
+** dired-launch
+#+begin_src elisp :tangle yes
+  (dired-launch-enable)
+
+  (setq dired-launch-default-launcher '("xdg-open"))
+#+end_src
 ** whitespace
 #+begin_src elisp :tangle yes
   (require 'whitespace)
@@ -158,14 +164,6 @@
                                      "<:<" ";;;"))
   (global-ligature-mode t)
 #+end_src  
-** zig-mode
-#+begin_src elisp :tangle yes
-  (setq zig-format-on-save nil)
-
-  (defun zig-compile-run ()
-    (interactive)
-    (compile "zig build run --color off"))
-#+end_src
 ** org-roam
 #+begin_src elisp :tangle yes
   (setq org-roam-directory "~/org/roaming")
@@ -195,10 +193,6 @@
 
   (add-hook 'haskell-mode-hook
             'interactive-haskell-mode)
-#+end_src
-** ement
-#+begin_src elisp :tangle yes
-(setq ement-save-sessions t)
 #+end_src
 ** tramp
 #+begin_src elisp :tangle yes

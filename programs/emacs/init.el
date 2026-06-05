@@ -78,6 +78,10 @@
 
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
+(dired-launch-enable)
+
+(setq dired-launch-default-launcher '("xdg-open"))
+
 (require 'whitespace)
 
 (setq whitespace-style '(face spaces space-mark))
@@ -122,12 +126,6 @@
                                    "<:<" ";;;"))
 (global-ligature-mode t)
 
-(setq zig-format-on-save nil)
-
-(defun zig-compile-run ()
-  (interactive)
-  (compile "zig build run --color off"))
-
 (setq org-roam-directory "~/org/roaming")
 (org-roam-db-autosync-mode)
 
@@ -151,8 +149,6 @@
 
 (add-hook 'haskell-mode-hook
           'interactive-haskell-mode)
-
-(setq ement-save-sessions t)
 
 (with-eval-after-load 'tramp
   (add-to-list 'tramp-remote-path 'tramp-own-remote-path))

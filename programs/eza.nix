@@ -1,5 +1,5 @@
 { ... }:
 
 {
-  enableNushellIntegration = true;
+  enableBashIntegration = true;
 }
