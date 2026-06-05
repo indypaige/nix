@@ -3,11 +3,8 @@ local config  = wezterm.config_builder()
 
 config.enable_tab_bar = false
 config.color_scheme   = "Catppuccin Frappé"
-config.font	      = wezterm.font {
-   family = 'Iosevka Term',
-   stretch = 'Expanded',
-   weight = 'Regular',
-};
+config.font	      = wezterm.font "Iosevka"
+config.font_size      = 20
 
 config.keys 	      = {
    {	action = wezterm.action.CloseCurrentTab({ confirm = true })
