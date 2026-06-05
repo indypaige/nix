@@ -20,11 +20,14 @@ in {
     _1password-cli
     pavucontrol
     alsa-utils
+    overskride
     iosevka
     ripgrep
     discord
+    nmgui
     unzip
     slurp
+    nemo
     grim
     bash
     vlc
