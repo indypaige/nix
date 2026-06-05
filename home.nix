@@ -42,6 +42,7 @@ in {
     mpdscribble     = i ./services/mpdscribble.nix;
     hyprpaper       = i ./services/hyprpaper.nix;
     blanket         = i ./services/blanket.nix;
+    emacs           = i ./services/emacs.nix;
     mako            = i ./services/mako.nix;
     mpd             = i ./services/mpd.nix;
   };
