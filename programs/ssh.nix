@@ -2,8 +2,5 @@
 
 {
   enableDefaultConfig = false;
-
-	matchBlocks."*"	    = { };
-
 	extraConfig 	      = "IdentityAgent ${env.onepass}";
 }

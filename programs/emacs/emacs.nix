@@ -12,8 +12,8 @@ in {
     org-super-agenda
     org-superstar
     haskell-mode
+    dired-launch
     org-contrib
-    ledger-mode
     inheritenv
     rust-mode
     org-recur
@@ -24,9 +24,6 @@ in {
     ligature
     polymode
     org-roam
-    zig-mode
-    emacsql
-    ement
     envrc
     magit
     dash
