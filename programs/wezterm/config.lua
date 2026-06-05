@@ -3,7 +3,7 @@ local config  = wezterm.config_builder()
 
 config.enable_tab_bar = false
 config.color_scheme   = "Catppuccin Frappé"
-config.font	      = wezterm.font "Iosevka"
+config.font	      = wezterm.font "Iosevka 20"
 
 config.keys 	      = {
    {	action = wezterm.action.CloseCurrentTab({ confirm = true })
