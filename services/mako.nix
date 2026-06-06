@@ -1,7 +1,0 @@
-{ ...}:
-
-{
-  settings = {
-    anchor = "top-left";
-  };
-}
