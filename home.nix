@@ -15,7 +15,7 @@ in {
   };
 
   imports                                      = [
-    inputs.catppuccin.homeModules.catppuccin
+    env.inputs.catppuccin.homeModules.catppuccin
   ];
 
   home.packages                                = with pkgs; [
