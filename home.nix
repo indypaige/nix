@@ -24,6 +24,7 @@ in {
     iosevka
     ripgrep
     discord
+    vesktop
     nmgui
     unzip
     slurp
