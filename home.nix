@@ -18,6 +18,8 @@ in {
     env.inputs.catppuccin.homeModules.catppuccin
   ];
 
+  catppuccin.enable                            = true;
+
   home.packages                                = with pkgs; [
     nerd-fonts.iosevka
     _1password-gui
