@@ -25,6 +25,10 @@ in {
     autoEnable = true;
 
     enable     = true;
+
+    hyprland   = {
+      enable = false;
+    };
   };
 
   home.packages                                = with pkgs; [
