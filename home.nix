@@ -100,7 +100,7 @@ in {
 
     text       = ''
     #!/bin/sh
-    nix flake update indynet --flake /etc/nixos
+    nix flake update nix --flake /etc/nixos
     nixos-rebuild switch
     '';
   };
