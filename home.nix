@@ -24,7 +24,6 @@ in {
     iosevka
     ripgrep
     discord
-    vesktop
     nmgui
     unzip
     slurp
@@ -56,6 +55,7 @@ in {
     chromium    = i ./programs/chromium.nix;
     starship    = i ./programs/starship.nix;
     hyprlock    = i ./programs/hyprlock.nix;
+    vesktop     = i ./programs/vesktop.nix;
     wezterm     = i ./programs/wezterm/wezterm.nix;
     direnv      = i ./programs/direnv.nix;
     emacs       = i ./programs/emacs/emacs.nix;
