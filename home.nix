@@ -14,6 +14,10 @@ in {
     enableBashIntegration = true;
   };
 
+  imports                                      = [
+    inputs.catppuccin.homeModules.catppuccin
+  ];
+
   home.packages                                = with pkgs; [
     nerd-fonts.iosevka
     _1password-gui
