@@ -18,7 +18,14 @@ in {
     env.inputs.catppuccin.homeModules.catppuccin
   ];
 
-  catppuccin.enable                            = true;
+  catppuccin                                   = {
+    accent     = "lavender";
+    flavor     = "frappe";
+
+    autoEnable = true;
+
+    enable     = true;
+  };
 
   home.packages                                = with pkgs; [
     nerd-fonts.iosevka
