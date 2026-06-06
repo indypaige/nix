@@ -1,6 +1,8 @@
 { pkgs, ... }: {
-        font        = {
-          name = "Iosevka";
-          size = 10;
-        };
+  colorScheme = "dark";
+
+  font        = {
+    name = "Iosevka";
+    size = 10;
+  };
 }
