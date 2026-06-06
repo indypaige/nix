@@ -11,7 +11,9 @@
       display-time-default-load-average nil)
 (display-time)
 
-(load-theme 'gruber-darker t nil)
+(load-theme 'catppuccin :no-confirm)
+(setq catppuccin-flavor 'frappe)
+(catppuccin-reload)
 
 (add-to-list 'default-frame-alist `(font . "Iosevka-20"))
 
