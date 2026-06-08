@@ -5,7 +5,7 @@
   activeConfig = "gui";
 
   configs      = {
-    gui = env.inputs.gui.${system}.default;
+    gui = env.inputs.gui.${env.system}.default;
   };
 
   systemd      = {
