@@ -68,6 +68,7 @@ in {
 
   programs                                     = {
     thunderbird = i ./programs/thunderbird.nix;
+    quickshell  = i ./programs/quickshell.nix;
     chromium    = i ./programs/chromium.nix;
     starship    = i ./programs/starship.nix;
     hyprlock    = i ./programs/hyprlock.nix;
