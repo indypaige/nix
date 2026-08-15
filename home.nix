@@ -33,8 +33,6 @@ in {
 
   home.packages                                = with pkgs; [
     nerd-fonts.iosevka
-    _1password-gui
-    _1password-cli
     pavucontrol
     alsa-utils
     overskride
