@@ -38,7 +38,6 @@ in {
     overskride
     iosevka
     ripgrep
-    discord
     nmgui
     unzip
     slurp
