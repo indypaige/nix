@@ -22,6 +22,7 @@ in {
     env                = [
       "NIX_PROFILES=/etc/profiles/per-user/${env.user}"
       "GRIM_DEFAULT_DIR,/home/${env.user}/Pictures"
+      "QT_QUICK_BACKEND=software"
       "XCURSOR_SIZE,15"
     ];
 
