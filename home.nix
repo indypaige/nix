@@ -35,6 +35,7 @@ in {
     nerd-fonts.iosevka
     prismlauncher
     pavucontrol
+    lsp-plugins
     alsa-utils
     overskride
     iosevka
