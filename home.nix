@@ -53,10 +53,6 @@ in {
     feh
   ];
 
-  wayland.windowManager                        = {
-    hyprland = i ./wm/hyprland.nix;
-  };
-
   xsession                                     = {
     enable = true;
 
