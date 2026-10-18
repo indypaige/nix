@@ -28,6 +28,7 @@ in {
     polymode
     org-roam
     tuareg
+    elcord
     envrc
     magit
     dash

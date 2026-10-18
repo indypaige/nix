@@ -202,6 +202,11 @@
   (add-hook 'haskell-mode-hook
             'interactive-haskell-mode)
 #+end_src
+** elcord
+#+begin_src elisp :tangle yes
+  (require 'elcord)
+  (elcord-mode)
+#+end_src
 ** tramp
 #+begin_src elisp :tangle yes
   (with-eval-after-load 'tramp
