@@ -43,6 +43,7 @@ in {
     zrythm
     ledger
     lutris
+    godot
     nmgui
     unzip
     slurp
