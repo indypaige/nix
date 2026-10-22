@@ -155,6 +155,10 @@
     "Refresh org-agenda."
     (org-agenda-refresh))
 #+end_src
+** gdscript
+#+begin_src elisp :tangle yes
+  (require 'gdscript-mode)
+#+end_src
 ** ligature
 #+begin_src elisp :tangle yes
   (ligature-set-ligatures 'prog-mode '("--" "---" "==" "===" "!=" "!==" "=!="

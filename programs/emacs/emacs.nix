@@ -14,6 +14,7 @@ in {
     org-auto-tangle
     impatient-mode
     org-superstar
+    gdscript-mode
     haskell-mode
     org-contrib
     ledger-mode
