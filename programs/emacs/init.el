@@ -14,7 +14,7 @@
 (require 'ansi-color)
 
 (defun colorize-compilation-buffer ()
-  (ansi-color-apply-on-region compilation-filter-start (point))
+  (ansi-color-apply-on-region compilation-filter-start (point)))
 
 (add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
 
