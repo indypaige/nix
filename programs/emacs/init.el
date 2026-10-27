@@ -11,6 +11,15 @@
       display-time-default-load-average nil)
 (display-time)
 
+(require 'ansi-color)
+
+(defun colorize-compilation-buffer ()
+  (toggle-read-only)
+  (ansi-color-apply-on-region compilation-filter-start (point))
+  (toggle-read-only))
+
+(add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
+
 (load-theme 'catppuccin :no-confirm)
 (setq catppuccin-flavor 'frappe)
 (catppuccin-reload)
