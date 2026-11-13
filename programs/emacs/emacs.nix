@@ -19,6 +19,7 @@ in {
     org-contrib
     ledger-mode
     inheritenv
+    yaml-mode
     rust-mode
     org-recur
     qml-mode
